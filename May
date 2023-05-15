@@ -1,0 +1,60 @@
+#include<stdio.h>
+int mat[10][10];
+void display(int);
+void degree(int);
+int main()
+{
+	int i, j,n;
+    	char reply;
+	printf("How many vertices:");
+	scanf("%d",&n);
+    	for ( i = 0 ; i < n ; i++ )
+    	{
+        	for ( j = 0 ; j < n ; j++ )
+        	{
+              		printf("\n Is there edge between %d & %d ? (Y/N) :",i+1,j+1);
+            		scanf(" %c", &reply);
+            		if ( reply == 'y' || reply == 'Y' )
+                		mat[i][j] = 1;
+            		else
+                		mat[i][j] = 0;
+		}
+    	}
+	display(n);
+	degree(n);
+	return 0;
+}
+
+void display(int size)
+{
+	int i,j;
+	printf("\n--------------------------------------------------------------------\n");
+	printf("\nAdjecency Matrix is:\n\n");
+	for(i=0;i<size;i++)
+	{
+		for(j=0;j<size;j++)
+		{
+			printf("%d\t",mat[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+void degree(int n)
+{
+	int i,j,indegree=0,outdegree=0;
+	for (i = 0; i < n ; i++ )//i=0 0<4T
+	{
+			for(j=0;j<n;j++)//j=0 0<4T
+			{
+				if (mat[i][j]==1)
+					outdegree++;
+				if (mat[j][i]==1)
+					indegree++;
+			}
+			printf("\nIndegree, Outdegree and Total Degree of vertex %d is %d, %d, %d",i+1,indegree,outdegree,indegree+outdegree);
+			indegree=0;
+			outdegree=0;
+	} // for
+	printf("\n\n");
+}
