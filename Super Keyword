@@ -1,0 +1,25 @@
+class Animal 
+{
+  public void move()
+{
+  System.out.println("Animal can move...");
+}
+
+class cat extends Animal
+{
+  Public void move()
+{
+  super.move()
+{
+  super.move();
+  System.out.println("Cats can walt and run");
+}
+ }
+public class Testcat
+{
+ public static void main(string args[])
+{
+  Animal b=new Cat();
+  b.move();
+}
+ }
