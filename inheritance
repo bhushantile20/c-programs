@@ -1,0 +1,65 @@
+import java.io.*;
+class Account
+{
+     String cname;
+     int ano;
+     Account(String n,int no)
+     {
+        ano=no;
+        cname=n;
+     }
+     void display()
+     {
+        System.out.println("Customer name="+cust_name);
+        System.out.println("Customer name="+ano);
+
+
+     }
+}
+class Sa extends Account{
+     int sbalance;
+     int mbal;
+     Saving_acc(String n,int no,int sbal,int mbal)
+     { 
+        super(n,no);
+        saving_bal=sbal;
+        min_bal=mbal;
+
+     }
+     void output()
+     {
+         display()
+        {
+            System.out.println("Customer name="+saving_bal);
+            System.out.println("Minimum balance ="+min_bal);
+
+        }    
+     }
+
+     class Acc-details extends Saving_acc{
+         int deposit,withdrawl;
+         Acc_deatil(String n,int no,int sbal,int mbal,int dep,int wd)
+         {
+             super(n,no,sbal,mbal);
+             withdrawal=wd;
+         }
+         void final_result()
+         {
+             output();
+             System.out.println("Deposit amount ="+deposit);
+             Sytem.out.println("Withdrawal amount ="+withdrawal);
+
+             
+         }
+     } 
+     
+}
+
+class sample
+{
+     public static void main(String args[])
+     {
+         Acc_detail a=new  Acc_detail("ABC",1803,10000,500,1000,2000);
+         a.final_result();
+     }
+}
