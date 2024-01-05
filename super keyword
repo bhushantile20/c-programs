@@ -1,0 +1,41 @@
+class Bank
+{
+     int getRateOfInterest()
+     {
+         return 0;
+     }
+}
+class HDFC extends Bank
+{
+     int getRateOfIntrest()
+     {
+         return 8;
+     }
+}
+class ICICI extends Bank
+{ 
+    int getRateOfIntrest ()
+   {retrun 7;
+   }
+
+}
+class SBI extends Bank{ 
+    int get RateOfInterest() 
+    { 
+        return 9;
+
+    }
+}
+
+class Test2
+{ 
+    public static void main(String args[])
+    {
+        HDFC s=new HDFC();
+        ICICI i=new ICICI();
+        SBI a=new SBI();
+        System.out.prinln("HDFC Rate of intrest :"+s.getRateOfIntrest());
+        System.out.prinln("ICICI Rate of intrest :"+s.getRateOfIntrest());
+        System.out.prinln("SBI Rate of interest :"+s.getRateOfInterest());
+    }
+}
