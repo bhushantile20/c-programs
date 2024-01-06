@@ -1,0 +1,11 @@
+class ChangeName
+{
+     public static void main(String args[])
+     {
+         Thread t=Thread.currentThread();
+         System.out.println("Privious name When thread creates "+t.getName());
+         t.setName("New");
+         System.out.println("New name of thread "+t.getName());
+     }
+}
+// New name of thread New
