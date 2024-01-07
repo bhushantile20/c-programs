@@ -1,0 +1,55 @@
+abstract class Bank
+{
+    int x;
+    abstract void roi();
+     void loan()
+     {
+         System.out.println("loan Given");
+     }
+      Bank()
+      {
+         x=29;
+         System.out.println(x);
+
+      }
+     }
+ class SA extends Bank
+ { 
+    void roi()
+    {
+         System.out.println("Roi applied by SA");
+
+    }
+
+ }
+ class CA extends Bank
+ {
+     void roi()
+     {
+         System.out.prinln("roi applied bt CA");
+
+     }
+
+ }
+
+//  class CA extends Bank
+//  {
+   
+
+
+//  }
+
+class AbstractC
+{
+     public static void main(String args[])
+     {
+         SA s1=new SA();
+         s1.roi();
+         s1.loan();
+
+         CA.c1=new  CA();
+         c1.roi();
+         c1.loan();
+         
+     }
+}
