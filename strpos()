@@ -1,0 +1,5 @@
+<?php
+echo strrpos("I am a PHP programmer", "am");
+echo "<br>";
+echo strrpos("I am a PHP programmer ","am",5);
+?>
