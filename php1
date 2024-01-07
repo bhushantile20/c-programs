@@ -1,0 +1,5 @@
+<?php
+  var_dump(14)."<br>";
+  var_dump("Hello")."<br>";
+  var_dump(25,"Ty1");
+  ?>
