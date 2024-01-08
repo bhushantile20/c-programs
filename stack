@@ -1,0 +1,112 @@
+struct stack
+{
+    int top;
+    int cap;
+    int *arr;
+
+};
+
+int isEmpty(struct stack *st)
+{
+    if(st->top==-1)
+    {
+         return 1;
+
+    }
+    else
+    {
+         return 0;
+
+    }
+}
+int isFull(struct stack *st)
+
+{
+    if(st->top==st->cap-1)
+
+    {
+        return 1;
+
+    }
+    else
+    {
+         return 0;
+
+    }
+}
+
+void push(struct stack*st)
+{
+     if(!isFull(st))
+     {
+         st->top++;
+         printf("Enter a data");
+         scanf("%d",&st->arr[st->top]);
+
+     }
+     else{
+         printf("Stack is full");
+
+     }
+
+}
+
+
+
+void main()
+{
+     int ch,size;
+     struct stack *st;
+     print("Enter a size of stack");
+     scanf("%d",&size);
+
+     st=(struct stack*)malloc(sizeof(struct stack));
+     st->top=-1;
+     st->cap=size;
+     st->arr=(int *)calloc(st->cap,sizeof(int));
+
+     printf("\n 1.push");
+     printf("\n2.pop");
+     printf("\n3.exit");
+     while(1)
+     {
+         printf("Enter your choice :");
+         scanf("%d",&ch);
+         switch(ch)
+         {
+             case 1:
+             {
+                push(st);
+                break;
+
+             }
+             case 2:
+             {
+                 push(st);
+                 break;
+
+             }
+             case 3:
+             {
+                 push(st);
+                 break;
+
+             }
+             case 4:
+             {
+                 push(st);
+                 break;
+
+             }
+             default:
+             {
+                 printf("Wrong input");
+
+             }
+         }
+     }
+     getch();
+}
+
+
+
