@@ -1,0 +1,26 @@
+struct node
+{
+     int data;
+     struct node *next;
+};
+struct node *start=0;
+struct node *cn()
+{
+     struct node*d1;
+     d1=(struct node*) malloc(struct node));
+     printf("Enter a data");
+     scanf("%d ",&d1->data);
+     d1->next=0;
+     return d1;
+
+     voidis(){
+         struct node *h1;
+         h1=cn();
+         if(start==0)
+         {
+             start =h1;
+         }
+         h1->next=start;
+         start=h1;
+     }
+}
