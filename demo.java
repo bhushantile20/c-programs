@@ -1,18 +1,31 @@
-//Write a program to read the First Name and Last Name of a person, his weight and height using command line arguments. Calculate the BMI Index which is defined as the individual's body mass divided by the square of their height. (Hint : BMI = Wts. In kgs / (ht)2 )
+//Slip4_1: Write a program to print an array after changing the rows and columns of a given two dimensional array.
 
+import java.util.*;
 class demo
 {
- public static void main(String args[]) 
-{
- String fname = args[0];
- String lname = args[1];
- double weight = Double.parseDouble(args[2]);
- double height = Double.parseDouble(args[3]);
- double BMI = weight / (height * height);
- System.out.println("First name is:" +fname);
- System.out.println("Last Name is:" + lname);
- System.out.println("weight is:" + weight);
- System.out.println("height is:"+ height);
- System.out.println("The Body Mass Index (BMI) is " + BMI + " kg/m2");
- }
-}
+   public static void main(String args[])
+   {
+ 	System.out.println("enter the row and column");
+	Scanner sc = new Scanner(System.in);
+	int r = sc.nextInt();
+  	int c = sc.nextInt();
+ 	int mat[][] = new int[r][c];
+	System.out.println("enter the array elts:");
+	for(int i=0;i<r;i++)
+ 	{
+	 for(int j=0;j<c;j++)
+ 	 {
+		 mat[i][j] = sc.nextInt();
+ 	 }
+        }
+	System.out.println("the matrix is:");
+ 	for(int i=0;i<c;i++)
+ 	{
+	 for(int j=0;j<r;j++)
+ 	 {
+		 System.out.print(" " +mat[j][i]);
+ 	 }
+	 System.out.println(" ");
+        }
+     }
+}  
