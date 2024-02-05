@@ -1,31 +1,30 @@
-//Slip4_1: Write a program to print an array after changing the rows and columns of a given two dimensional array.
-
-import java.util.*;
 class demo
-{
-   public static void main(String args[])
-   {
- 	System.out.println("enter the row and column");
-	Scanner sc = new Scanner(System.in);
-	int r = sc.nextInt();
-  	int c = sc.nextInt();
- 	int mat[][] = new int[r][c];
-	System.out.println("enter the array elts:");
-	for(int i=0;i<r;i++)
- 	{
-	 for(int j=0;j<c;j++)
- 	 {
-		 mat[i][j] = sc.nextInt();
- 	 }
-        }
-	System.out.println("the matrix is:");
- 	for(int i=0;i<c;i++)
- 	{
-	 for(int j=0;j<r;j++)
- 	 {
-		 System.out.print(" " +mat[j][i]);
- 	 }
-	 System.out.println(" ");
-        }
-     }
-}  
+{ 
+    public static void main(String args[])
+    {
+         int a[]={5,10};
+         int b=5;
+         try
+         {
+            int x=a[2]/b-a[1];
+
+         }
+         catch(ArithmeticException e)
+         {
+             System.out.println("Divison by zero");
+
+         }
+         catch(ArrayIndexOutOfBoundsException e)
+         {
+             System.out.println("Array index error");
+
+         }
+         catch(ArrayStoreException e)
+         {
+             System.out.println("Wrong data type");
+
+         }
+         int y=a[1]/a[0];
+         System.out.println("Y="+y);
+    }
+}
