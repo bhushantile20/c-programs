@@ -19,7 +19,7 @@ class Q2
              {a1.add(t);
              al.add(sc.nextInt());
          }}
-         
+
          Collection.sort(a1);
          System.out.println("Sorted Integers");
          System.out.println(a1);
@@ -33,7 +33,7 @@ class Q2
           
          else
          { 
-            System.out.println(t+"found at"+ans)
+            System.out.println(t+"found at"+ans);
          }
 
      }
