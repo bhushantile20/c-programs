@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x;
+        var d=new Date().getDay();
+        switch(d)
+        {
+             case 0:
+             x="Today it 's Sunday";
+             break;
+             case 1:
+             x="Today it's Monday";
+             break;
+             case 2:
+             x="Today it's TUesday";
+             break;
+             case 3:
+             x="Today it's Wednesday ";
+             break;
+             case 4:
+             x="Todays its Thursday ";
+             break;
+             case 5:
+             x="Todays its Friday ";
+             break;
+             case 6:
+             x="Todays its Saturday";
+             break;
+             default:
+             x="Looking forward to the weekend";
+        }
+        document.write(x);
+    </script>
+</body>
+</html>
