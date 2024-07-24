@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+           function initial()
+           {
+            //webpage:docuement
+            //browser:navigator
+               alert("Browse name:" +navigator.userAgent);
+               navigator
+               form1.roll.focus()
+           }
+     function fun()
+    {
+      if(form1.roll.value==""){
+            document.getElementById('rollspan').style.color="red";
+            document.getElementById('rollspan').innerHTML="roll number filed can not be empty";
+        
+        form1.roll.focus();
+      } else{
+        document.getElementById('rollspan').innerHTML=" ";
+      }
+    }
+
+    function fun1()
+    {
+        str=form1.name.value;
+        document.getElementById('namespan').innerHTML=str;
+
+    }
+   </script>
+</head>
+<body onload="initial()">
+    <form name="form1">
+        Enter roll number<input type="text" name="roll" onblur="fun()"> <span id ="rollspan"></span><br>
+        Enter name<input type="text" name= "name" onkeyup="fun1()"> <span id="namespan"></span><br>
+       
+    </form>
+</body>
+</html>
