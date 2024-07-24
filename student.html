@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
 </head>
-<body>
-    <form action="student.php">
-        Enter roll number<input type="text"name="roll"/><br>
-        Enter name<input type="text" name="name"/><br>
-        Enter marks <input type="text"name="mks"/><br>
-        <input type="submit" value="ok"/>
+<body onload="fun()">
+    <form name="form1" action="hello.php">
+        Enter UserName<input type="text" name="usr"> <span id="usrspan"></span><br>
+        Enter contact no<input type="text" name="contact"><span id="contactspan"></span><br>
+        Enter password<input type="password" name="pwd"><span id="pwdspan"></span><br>
+        Enter confirm password<input type="password" name="cpwd"><span id="cpwdspan"></span><br>
+
+        <input type="button" value="Cilck" onclick="return validate()">
+        <input type="button" value="register" onclick="register()">
     </form>
+
+    <script src="student.js"></script>
 </body>
 </html>
